@@ -8,3 +8,13 @@ Get-Service -Name DsmSvc | fl -property *01  - makes same as gm, but displays va
 fw - displays only one parameter. display column 3
 
 out-gridview
+
+# Filtering
+ get-process | where-object {$_.ProcessName -Match "note*"}
+ get-process | where-object {$_.ProcessName -Match "note*" -and $_.ProcessName -notlike '*+'}
+-like
+-match
+where-object -filter
+
+measure-object
+
