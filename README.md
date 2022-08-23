@@ -18,3 +18,6 @@ where-object -filter
 
 measure-object
 
+
+# Errors
+$error[0].Exception.Message
