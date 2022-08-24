@@ -21,3 +21,11 @@ measure-object
 
 # Errors
 $error[0].Exception.Message
+
+
+# test syntax
+Get-Command -syntax '.\logging.ps1'
+
+# output streams
+write-information
+write-warning
